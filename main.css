@@ -2,19 +2,26 @@ body,
 html {
   /* height:100%; */
   display: grid;
-  grid-template-rows: 25% 50% 25%;
-  grid-template-columns: auto;
+  grid-template-rows: 3fr 50% 25%;
+  grid-template-columns: 100%;
   grid-template-areas: 
   "header"
   "main"
   "footer";
+  background-color: blanchedalmond;
   margin: 0px;
   padding: 0px;
 }
 
-header > h1 {
+img {
+  height: 70px;
+  width: auto;
+}
+
+header {
   grid-area: header;
   text-align: center;
+
 }
 
 main {
