@@ -1,5 +1,10 @@
-body,
-html {
+* { /* Basic Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
   height:100%;
   display: grid;
   grid-template-rows: 3fr 45% 25%;
@@ -8,11 +13,9 @@ html {
   "header"
   "main"
   "footer";
-  
-  background-color: blanchedalmond;
-  margin: 0px;
-  padding: 0px;
-  
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  font-family: 'Open Sans', sans-serif;
 }
 
 img {
@@ -32,9 +35,7 @@ header {
   align-items: center;
   background-color: white;
   margin: 5px;
-  padding: 1%;
-  padding-right: 2%;
-  
+  padding: 10px 2%;
 }
 
 header > h1{
@@ -42,12 +43,28 @@ header > h1{
   text-align: left;
 
 }
+
 header nav ul {
   list-style: none;
+  display: flex;
+  gap: 10px; /* This will space out the buttons */
+  margin: 0;
+  padding: 0;
 }
 
-.store-item {
-  justify-self: auto;
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
 }
 
 main {
@@ -55,19 +72,52 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
-
 }
+
 .store-item {
   width: 23%;
   height: auto;
   justify-content: center;
   text-align: center;
-  background-color: whitesmoke;
-  
+  background-color: rgba(199, 214, 194, 0.616);
+  justify-self: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-details {
+  /* Style for the details block */
+  padding: 10px;
+  background-color: rgba(0,0,0,0.1); /* Example background, adjust as needed */
+  display: flex;
+  justify-content: space-between; /* This spreads out the span elements */
+}
+
+.store-item p:first-of-type { 
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.store-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.store-item p{
+  font-size: 1.2rem;
+}
+
+.store-item:hover {
+  background-color: lightgray; /* Change the background color on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a box-shadow on hover */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Add a smooth transition */
 }
 
 footer {
   grid-area: footer;
   text-align: center;
+  padding: 10px 0;
 }

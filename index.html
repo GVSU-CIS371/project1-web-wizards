@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
     <title>My Store</title>
   </head>
 
   <body>
     <div id="app">
+
       <header>
         <h1>My Store</h1>
         <nav>
-          <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+          <ul style="display: flex; justify-content: space-between; margin-left: 20px;">
+            <li><a href="#" class="nav-button">Home</a></li>
+            <li><a href="#" class="nav-button">Orders/Returns</a></li>
+            <li><a href="#" class="nav-button">Contact</a></li>
+            <li><a href="#" class="nav-button">About</a></li>
           </ul>
         </nav>
       </header>
+
       <main>
         <div class="store-item">
           <img
@@ -31,7 +34,12 @@
             A powerful gaming laptop with top-tier graphics and performance for
             immersive gaming experiences.
           </p>
-          <span>4/5</span><span>$1200</span><span>stock 5</span>
+          <div class="item-details">
+            <span>4/5</span>
+            <span>$1200</span>
+            <span>stock 5</span>
+          </div>
+          
         </div>
         <div class="store-item">
           <img
@@ -43,7 +51,11 @@
             Experience cutting-edge technology with our latest SmartTech Pro,
             featuring an ultra-responsive display and superior camera quality.
           </p>
-          <span>5/5</span><span>$800</span><span>stock 10</span>
+          <div class="item-details">
+            <span>4.5/5</span>
+            <span>$900</span>
+            <span>stock 10</span>
+          </div>
         </div>
         <div class="store-item">
           <img
@@ -55,7 +67,11 @@
             Efficiently power up your devices with our compact, high-speed USB-C
             charging brick designed for the modern tech-savvy user.
           </p>
-          <span>4/5</span><span>$12</span><span>stock 20</span>
+          <div class="item-details">
+            <span>4.5/5</span>
+            <span>$30</span>
+            <span>stock 25</span>
+          </div>
         </div>
         <div class="store-item">
           <img
@@ -66,7 +82,11 @@
             Crafted for comfort, our soft and breathable t-shirt is perfect for
             personal customization or stylish everyday wear.
           </p>
-          <span>4/5</span><span>$20</span><span>stock 25</span>
+          <div class="item-details">
+            <span>4/5</span>
+            <span>$15</span>
+            <span>stock 50</span>
+          </div>
         </div>
         <div class="store-item">
           <img
@@ -77,7 +97,11 @@
             Stay trendy with our Slim Fit Jeans, offering both comfort and style
             with durable, high-quality denim.
           </p>
-          <span>3/5</span><span>$45</span><span>stock 15</span>
+          <div class="item-details">
+            <span>4.5/5</span>
+            <span>$45</span>
+            <span>stock 30</span>
+          </div>
         </div>
         <div class="store-item">
           <img
@@ -88,7 +112,11 @@
             Add a splash of fun to your outfit with our vibrant, patterned
             socks, combining style with everyday comfort.
           </p>
-          <span>4.8/5</span><span>$15</span><span>stock 7</span>
+          <div class="item-details">
+            <span>4/5</span>
+            <span>$5</span>
+            <span>stock 100</span>
+          </div>
         </div>
         <div class="store-item">
           <img
@@ -100,7 +128,11 @@
             Enjoy the natural sweetness of our freshly-picked, juicy red apples,
             perfect for a healthy snack.
           </p>
-          <span>4/5</span><span>$0.5</span><span>stock 100</span>
+          <div class="item-details">
+            <span>4/5</span>
+            <span>$1</span>
+            <span>stock 100</span>
+          </div>
         </div>
         <div class="store-item">
           <img
@@ -111,7 +143,11 @@
             Indulge in the wholesome goodness of our whole grain bread, baked
             fresh for a nutritious and delicious choice.
           </p>
-          <span>4/5</span><span>$2</span><span>stock 20</span>
+          <div class="item-details">
+            <span>4/5</span>
+            <span>$3</span>
+            <span>stock 30</span>
+          </div>
         </div>
         <div class="store-item">
           <img
@@ -122,7 +158,11 @@
             Savor the rich, nutty flavor of our premium cashews, ideal for a
             healthy, energizing snack.
           </p>
-          <span>3/5</span><span>$4</span><span>stock 56</span>
+          <div class="item-details">
+            <span>3/5</span>
+            <span>$4</span>
+            <span>stock 56</span>
+          </div>
         </div>
       </main>
       <footer><p>© 2024 My Online Store. All rights reserved.</p></footer>
