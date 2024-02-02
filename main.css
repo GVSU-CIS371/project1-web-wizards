@@ -11,7 +11,8 @@ html {
   
   background-color: blanchedalmond;
   margin: 0px;
-  padding: 20px;
+  padding: 0px;
+  
 }
 
 img {
@@ -20,6 +21,9 @@ img {
   justify-content: center;
 }
 
+span {
+  margin: 3%;
+}
 
 header {
   grid-area: header;
