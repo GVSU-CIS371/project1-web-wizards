@@ -55,12 +55,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 
 }
 .store-item {
   width: 23%;
   height: auto;
   justify-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+  
 }
 
 footer {
